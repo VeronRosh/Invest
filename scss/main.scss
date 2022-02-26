@@ -122,7 +122,6 @@ h1.company-name {
 // NAV			-
 // -------------------
 .nav{
-	
 	&-mobile{
 		position: absolute;
 		top: 0;
@@ -134,11 +133,11 @@ h1.company-name {
 		align-items: center;
 		flex-direction: column;
 		transform: translateX(-102%);
-		transition: transfrom .3s;
+		transition: transform .3s;
 		background-color: $white;
 		z-index: 10;
 	}
-	
+
 	&--active{
 		transform: translateX(0);
 	}
