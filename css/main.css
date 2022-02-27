@@ -422,6 +422,60 @@ h1.company-name {
   color: #9b9165;
 }
 
+@media (min-width: 576px) {
+  .info {
+        grid-template-areas: 'title box' 'title box' 'title box';
+    padding: 10em 2em;
+  }
+  .info__box {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .info__title {
+    padding: 0em 1em;
+  }
+  .info__box-text, .info__box-img {
+    max-width: 500px;
+  }
+  .info__bg-icon {
+    position: absolute;
+    display: block;
+    opacity: 0.05;
+    z-index: -5;
+  }
+  .info__bg-icon-one {
+    top: 15%;
+    width: 20%;
+    left: 5%;
+    -webkit-animation: rotate-right 70s infinite;
+            animation: rotate-right 70s infinite;
+  }
+  .info__bg-icon-two {
+    bottom: 10%;
+    width: 35%;
+    left: 5%;
+    -webkit-animation: rotate-left 80s infinite;
+            animation: rotate-left 80s infinite;
+  }
+  .info__bg-icon-three {
+    bottom: 45%;
+    width: 45%;
+    left: 16%;
+    -webkit-animation: rotate-left 70s infinite;
+            animation: rotate-left 70s infinite;
+  }
+  .info__bg-icon-four {
+    bottom: 35%;
+    width: 25%;
+    left: -10%;
+    -webkit-animation: rotate-right 80s infinite;
+            animation: rotate-right 80s infinite;
+  }
+}
+
 @media (min-width: 768px) {
   .cards__box {
     padding: 10em 2em;
@@ -453,6 +507,15 @@ h1.company-name {
 }
 
 @media (min-width: 992px) {
+  h1.company-name {
+    font-size: 6rem;
+  }
+  .section-title {
+    font-size: 4.8rem;
+  }
+  .section-title::before {
+    height: 4px;
+  }
   .header {
     -ms-grid-rows: auto (1fr)[2];
         grid-template-rows: auto repeat(2, 1fr);
@@ -546,9 +609,6 @@ h1.company-name {
   .nav__link:hover::before {
     -webkit-animation: pulse 0.8s;
             animation: pulse 0.8s;
-  }
-  h1.company-name {
-    font-size: 6rem;
   }
 }
 

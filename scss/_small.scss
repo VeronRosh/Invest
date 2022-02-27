@@ -1,3 +1,55 @@
-@media(min-width: 576px){
-    
+@media (min-width: 576px) {
+	.info {
+		grid-template-areas:
+			'title box'
+			'title box'
+			'title box';
+		padding: 10em 2em;
+
+		&__box {
+			display: grid;
+			justify-content: end;
+		}
+
+		&__title {
+			padding: 0em 1em;
+		}
+
+		&__box-text,
+		&__box-img {
+			max-width: 500px;
+		}
+
+        &__bg-icon{
+            position: absolute;
+            display: block;
+            opacity: 0.05;
+            z-index: -5;
+
+            &-one{
+                top: 15%;
+                width: 20%;
+                left: 5%;
+                animation: rotate-right 70s infinite;
+            }
+            &-two{
+                bottom: 10%;
+                width: 35%;
+                left: 5%;
+                animation: rotate-left 80s infinite;
+            }
+            &-three{
+                bottom: 45%;
+                width: 45%;
+                left: 16%;
+                animation: rotate-left 70s infinite;
+            }
+            &-four{
+                bottom: 35%;
+                width: 25%;
+                left: -10%;
+                animation: rotate-right 80s infinite;
+            }
+        }
+	}
 }
