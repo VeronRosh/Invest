@@ -96,4 +96,10 @@
             grid-row: 3/4;
         }
     }
+
+    .footer{
+        &__arrow-up{
+            display: block;
+        }
+    }
 }
