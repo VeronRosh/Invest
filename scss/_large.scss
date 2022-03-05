@@ -112,4 +112,13 @@
 			}
 		}
 	}
+    .gallery{
+        grid-template-columns: repeat(8, 1fr);
+    
+        &__img{
+            &:nth-child(odd){
+                display: block;
+            }
+        }
+    }
 }

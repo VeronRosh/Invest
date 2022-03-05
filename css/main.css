@@ -497,6 +497,30 @@ h1.company-name {
   background-color: #d6c78e;
 }
 
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery__img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__img:nth-child(odd) {
+  display: none;
+}
+
+.footer {
+  padding: 3em 1em;
+  border-top: 1px solid #191919;
+  text-align: center;
+}
+
 @media (min-width: 576px) {
   .info {
         grid-template-areas: 'title box' 'title box' 'title box';
@@ -623,6 +647,13 @@ h1.company-name {
   .newsletter__form-btn {
     margin-top: 0;
   }
+  .gallery {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .gallery__img:nth-child(odd) {
+    display: block;
+  }
 }
 
 @media (min-width: 992px) {
@@ -734,6 +765,13 @@ h1.company-name {
 @media (min-width: 1200px) {
   .header__text p {
     font-size: 2.2rem;
+  }
+  .gallery {
+    -ms-grid-columns: (1fr)[8];
+        grid-template-columns: repeat(8, 1fr);
+  }
+  .gallery__img:nth-child(odd) {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */
