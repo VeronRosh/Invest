@@ -459,6 +459,44 @@ h1.company-name {
   color: #d6c78e;
 }
 
+.newsletter {
+  padding: 8em 2em;
+  background-color: #A01C35;
+  text-align: center;
+}
+
+.newsletter__text {
+  padding: 1em;
+  margin-bottom: 1em;
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.newsletter__form-input {
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 100%;
+  border: 1px solid transparent;
+  background-color: #fff;
+}
+
+.newsletter__form-btn {
+  padding: 1em 2em;
+  background: none;
+  margin-top: 1.5em;
+  border: 1px solid #d6c78e;
+  color: #d6c78e;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: background-color .3s, color .3s;
+  transition: background-color .3s, color .3s;
+}
+
+.newsletter__form-btn:hover {
+  color: #A01C35;
+  background-color: #d6c78e;
+}
+
 @media (min-width: 576px) {
   .info {
         grid-template-areas: 'title box' 'title box' 'title box';
@@ -559,6 +597,31 @@ h1.company-name {
   .plans__item-name {
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .newsletter__wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newsletter__text {
+    margin-bottom: 0;
+  }
+  .newsletter__form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr;
+    gap: 1.5em;
+  }
+  .newsletter__form-input {
+    margin-bottom: 0;
+  }
+  .newsletter__form-btn {
+    margin-top: 0;
   }
 }
 
